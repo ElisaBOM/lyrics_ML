@@ -1,0 +1,22 @@
+conda create -n pylyrics python=3.10 -y
+
+conda activate pylyrics
+
+
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+pip install bertopic[visualization]
+pip install spacy
+pip install sentence-transformers
+pip install umap-learn hdbscan
+
+# Spanish support
+python -m spacy download es_core_news_sm
+
+pip install matplotlib seaborn plotly tqdm
+pip install ipywidgets
+pip install notebook jupyterlab
+
+# Utils
+pip install swifter pandas numpy scikit-learn
+
